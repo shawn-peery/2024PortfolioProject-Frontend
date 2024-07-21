@@ -12,4 +12,15 @@ describe("Home Page Tests", () => {
     expect(anchorElement).toBeInTheDocument();
 
   })
+
+  it("has a welcome header", () => {
+
+    render(<BrowserRouter><Home /></BrowserRouter>);
+
+    const headingElement = screen.getByRole("heading");
+    expect(headingElement).toBeInTheDocument();
+    expect(headingElement).toHaveTextContent("Welcome to Shawn's Portfolio Project")
+
+  })
+
 })

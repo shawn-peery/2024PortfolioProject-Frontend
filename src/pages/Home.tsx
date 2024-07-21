@@ -5,6 +5,7 @@ const Home = () => {
   return <>
 
     <MainNav />
+    <h1 role="heading">Welcome to Shawn's Portfolio Project</h1>
 
   </>
 
