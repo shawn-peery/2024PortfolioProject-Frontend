@@ -1,13 +1,12 @@
-import MainNav from "../theme/MainNav"
+import Layout from "../theme/Layout"
 
 const Home = () => {
 
-  return <>
+  return <Layout>
 
-    <MainNav />
     <h1 role="heading">Welcome to Shawn's Portfolio Project</h1>
 
-  </>
+  </Layout>
 
 }
 

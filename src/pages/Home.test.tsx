@@ -23,4 +23,18 @@ describe("Home Page Tests", () => {
 
   })
 
+  it("renders a navigation", () => {
+    render(<BrowserRouter><Home /></BrowserRouter>)
+
+    const navigation = screen.getByRole("navigation");
+    expect(navigation).toBeInTheDocument();
+  })
+
+
+  it("renders a footer", () => {
+    render(<BrowserRouter><Home /></BrowserRouter>)
+
+    const footer = screen.getByRole("contentinfo");
+    expect(footer).toBeInTheDocument();
+  })
 })
