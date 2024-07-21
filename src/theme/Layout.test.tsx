@@ -14,5 +14,10 @@ describe("Layout Tests", () => {
     expect(anchorElement).toBeInTheDocument();
 
     expect(anchorElement).toHaveAttribute('href', '/todos')
+
+    const footer = screen.getByRole("contentinfo");
+    expect(footer).toBeInTheDocument();
+
+    expect(footer).toHaveTextContent("Made by Shawn Peery - shawn.w8465@gmail.com - 801-503-2828")
   });
 })
