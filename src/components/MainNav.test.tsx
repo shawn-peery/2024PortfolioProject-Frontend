@@ -10,11 +10,10 @@ describe("Navbar Tests", () => {
 		render(<BrowserRouter><MainNav /></BrowserRouter>);
 
 		const anchorElement = screen.getByRole("link");
-		//		console.log(anchorElement)
 
-		//		expect(anchorElement).toBeInTheDocument();
+		expect(anchorElement).toBeInTheDocument();
 
-		//		expect(anchorElement).toHaveAttribute("href", "/todos");
+		expect(anchorElement).toHaveAttribute("href", "/todos");
 
 
 
