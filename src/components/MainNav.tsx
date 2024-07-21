@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 const MainNav = () => {
 
   return (
     <ul>
       <li>
-        <a role='link' href="/todos" />
+        <Link role="link" to="/todos">Todos</Link>
       </li>
     </ul>
   )
