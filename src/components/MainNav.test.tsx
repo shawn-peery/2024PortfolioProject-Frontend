@@ -1,4 +1,3 @@
-
 import { describe, expect, it } from 'vitest'
 import { render, screen } from "@testing-library/react"
 
@@ -13,6 +12,8 @@ describe("Navbar Tests", () => {
 		console.log(anchorElement)
 
 		expect(anchorElement).toBeInTheDocument();
+
+		expect(anchorElement).toHaveAttribute("href", "/todos");
 
 
 

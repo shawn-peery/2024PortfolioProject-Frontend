@@ -3,7 +3,7 @@ const MainNav = () => {
   return (
     <ul>
       <li>
-        <a role='link' />
+        <a role='link' href="/todos" />
       </li>
     </ul>
   )
