@@ -1,6 +1,8 @@
+import '@testing-library/jest-dom';
 
-import { describe, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { render, screen } from "@testing-library/react"
+
 import MainNav from "./MainNav";
 
 describe("Navbar Tests", () => {
@@ -10,6 +12,8 @@ describe("Navbar Tests", () => {
 
 		const anchorElement = screen.getByRole("link");
 		console.log(anchorElement)
+
+		expect(anchorElement).toBeInTheDocument();
 
 
 
