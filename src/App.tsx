@@ -1,7 +1,7 @@
 import './App.css'
-import MainNav from './components/MainNav'
 import { Route, Routes } from 'react-router'
 import { BrowserRouter } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
   //  const [count, setCount] = useState(0)
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" element={<MainNav />}>
+        <Route path="/" element={<Home />}>
         </Route>
       </Routes>
 
