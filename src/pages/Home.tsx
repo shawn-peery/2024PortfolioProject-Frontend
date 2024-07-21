@@ -1,4 +1,4 @@
-import MainNav from "../components/MainNav"
+import MainNav from "../theme/MainNav"
 
 const Home = () => {
 
