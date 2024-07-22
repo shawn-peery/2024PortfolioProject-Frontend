@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 import Todos from "./Todos"
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 describe("Todos Tests", () => {
 
@@ -30,6 +30,16 @@ describe("Todos Tests", () => {
 
     expect(todosHeader).toBeInTheDocument();
     expect(todosHeader).toHaveTextContent("Todos");
+  });
+
+
+  it("renders a get todos button", () => {
+    render(<BrowserRouter><Todos /></BrowserRouter>)
+
+    const todosButton = screen.getByRole("button");
+
+    expect(todosButton).toBeInTheDocument();
+
   });
 
 })
